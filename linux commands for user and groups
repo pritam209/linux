@@ -1,0 +1,132 @@
+In Linux, there are various commands for managing users and groups. Here are the most commonly used commands:
+
+User Management Commands
+Create a new user:
+
+bash
+Copy code
+sudo adduser username
+or
+
+bash
+Copy code
+sudo useradd username
+Delete a user:
+
+bash
+Copy code
+sudo deluser username
+or
+
+bash
+Copy code
+sudo userdel username
+Modify a user:
+
+bash
+Copy code
+sudo usermod options username
+Change a user's password:
+
+bash
+Copy code
+sudo passwd username
+Display user information:
+
+bash
+Copy code
+id username
+or
+
+bash
+Copy code
+getent passwd username
+List all users:
+
+bash
+Copy code
+cat /etc/passwd
+Lock a user account:
+
+bash
+Copy code
+sudo passwd -l username
+Unlock a user account:
+
+bash
+Copy code
+sudo passwd -u username
+Group Management Commands
+Create a new group:
+
+bash
+Copy code
+sudo addgroup groupname
+or
+
+bash
+Copy code
+sudo groupadd groupname
+Delete a group:
+
+bash
+Copy code
+sudo delgroup groupname
+or
+
+bash
+Copy code
+sudo groupdel groupname
+Modify a group:
+
+bash
+Copy code
+sudo groupmod options groupname
+Add a user to a group:
+
+bash
+Copy code
+sudo usermod -aG groupname username
+Remove a user from a group:
+
+bash
+Copy code
+sudo gpasswd -d username groupname
+List all groups:
+
+bash
+Copy code
+cat /etc/group
+Display group information:
+
+bash
+Copy code
+getent group groupname
+Other Useful Commands
+Change user's primary group:
+
+bash
+Copy code
+sudo usermod -g groupname username
+Change user's home directory:
+
+bash
+Copy code
+sudo usermod -d /new/home/dir username
+Create a system user:
+
+bash
+Copy code
+sudo adduser --system username
+Create a system group:
+
+
+Copy code
+sudo addgroup --system groupname
+These commands should cover most of the common tasks associated with managing users and groups in a Linux system.
+
+
+
+
+
+
